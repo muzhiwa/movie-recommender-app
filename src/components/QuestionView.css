@@ -1,0 +1,108 @@
+.question-view {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.question-view h1 {
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: #718096;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.question-form {
+  text-align: left;
+}
+
+.question-group {
+  margin-bottom: 2rem;
+}
+
+.question-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.question-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.question-group textarea:focus {
+  outline: none;
+  border-color: #48bb78;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  margin: 0;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #48bb78;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #38a169;
+}
+
+.submit-button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.submit-button.loading {
+  background-color: #38a169;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .question-view {
+    padding: 1rem;
+  }
+  
+  .question-view h1 {
+    font-size: 2rem;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
